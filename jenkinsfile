@@ -4,6 +4,7 @@ pipeline {
 	stage("build"){
 		steps {
 		sh "echo hello from jenkins pipeline"
+		sh"export PATH=$PATH:/c/Users/harsi/AppData/Local/Programs/Python/Python310/python"
 		sh "#!/usr/bin/env python"
 		sh "python --version"
 		sh "python ppfile.py"
