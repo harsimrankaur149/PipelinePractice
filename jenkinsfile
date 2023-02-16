@@ -3,8 +3,8 @@ pipeline {
 	stages {
 	stage("build"){
 		steps {
-		ssh "echo hellp from jenkins pipeline"
-		ssh "python ppfile.py"
+		sh "echo hellp from jenkins pipeline"
+		sh "python ppfile.py"
 		}
 	}
 }
