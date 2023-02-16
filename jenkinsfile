@@ -4,6 +4,7 @@ pipeline {
 	stage("build"){
 		steps {
 		sh "echo hellp from jenkins pipeline"
+		sh "python --version"
 		sh "python ppfile.py"
 		}
 	}
