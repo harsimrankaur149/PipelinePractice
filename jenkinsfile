@@ -1,0 +1,11 @@
+pipeline {
+	agent any
+	stages {
+	stage("build"){
+		steps {
+		ssh "echo hellp from jenkins pipeline"
+		ssh "python ppfile.py"
+		}
+	}
+}
+}
