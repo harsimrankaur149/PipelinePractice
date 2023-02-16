@@ -3,7 +3,8 @@ pipeline {
 	stages {
 	stage("build"){
 		steps {
-		sh "echo hellp from jenkins pipeline"
+		sh "echo hello from jenkins pipeline"
+		sh "#!/usr/bin/env python"
 		sh "python --version"
 		sh "python ppfile.py"
 		}
